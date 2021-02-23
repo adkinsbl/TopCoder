@@ -17,8 +17,8 @@ class Truckloads:
 					q.put(halfCrates)
 					q.put(halfCrates+1)
 			else:
-				truckLoads += 1
 		return(truckLoads)
+				truckLoads += 1
 		
 t = Truckloads()
 print(t.numTrucks(14,3))
