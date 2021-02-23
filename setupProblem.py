@@ -28,8 +28,6 @@ else:
 	methodName = soup.find("td", text="Method:").find_next_sibling("td").text
 	
 	if args.dir == '.':
-		TCDIR = 'C:\\Users\\adkin\\OneDrive\\Documents\\GitHub\\TopCoder'
-		print(os.getcwd())
 		path = os.path.join(os.getcwd(), problemNumber)
 	else:
 		path = os.path.join(args.dir, problemNumber)
